@@ -1,0 +1,25 @@
+{
+  "name": "ez_nft",
+  "version": "1.0.0",
+  "description": "takes art components and automatically generates all possible combinations for upload to IPFS",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctnava/auto-art.git"
+  },
+  "author": "CyAaron Tai Nava",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ctnava/auto-art/issues"
+  },
+  "homepage": "https://github.com/ctnava/auto-art#readme",
+  "dependencies": {
+    "all": "0.0.0",
+    "canvas": "^2.8.0",
+    "ipfs": "^0.58.6"
+  }
+}
