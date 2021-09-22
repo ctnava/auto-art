@@ -9,6 +9,7 @@ npm install
 ```
 # Configuration
 ![](https://github.com/ctnava/auto-art/blob/main/blob/traits.PNG)
+
 Place your assets into the traits folder, divided into smaller folders prefixed with "x_" as seen in the picture.
 The program will place layers in that order. Each folder's name is recognized as an attribute trait type and each file's name is recognized as the value.
 
@@ -69,5 +70,8 @@ _________________________________________________________________
 Upload Successful
 overwriting ./src/build.json
 ```
+
+check your build folder for IPFS objects that hold your CID if you forget to note them or wish to summon them in another program.
+
 ![](https://github.com/ctnava/auto-art/blob/main/blob/ipfs.PNG)
 ![](https://github.com/ctnava/auto-art/blob/main/blob/sampleImages.PNG)
