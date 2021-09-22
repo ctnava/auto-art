@@ -131,6 +131,7 @@ function debugComponents() {
   console.log(valuesCombinations);
   if(theoreticalCollectionSize === valuesCombinations.length) { console.log("SUCCESS: All Possible Value Combinations Generated"); }
   else { console.log("ERROR: theoreticalCollectionSize != attributesCombinations.length"); }
+  console.log(`Generating ${attributesCombinations.length} Unique Collectibles...`);
   console.log("_________________________________________________________________");
 }
 

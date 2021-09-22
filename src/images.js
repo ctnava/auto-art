@@ -1,7 +1,7 @@
 const console = require("console");
 const fs = require("fs");
-const { traitsDir, imgDir } = require("./directories.js");
-const { theoreticalCollectionSize, traits, traitPaths, valuesCombinations } = require("./components.js");
+const { imgDir } = require("./directories.js");
+const { traits, traitPaths, valuesCombinations } = require("./components.js");
 
 const dimensions = {width: 230, height: 230};
 

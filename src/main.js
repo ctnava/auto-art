@@ -1,19 +1,26 @@
 const console = require("console");
+const fs = require("fs");
+
 const { initializeBuildDirectory }  = require("./directories.js");
-const { debugComponents, attributesCombinations } = require("./components.js");
-const { generateMetadata } = require("./metadata.js");
-const { generateImages } = require("./images.js");
+const { debugComponents } = require("./components.js");
+
+function init() {
+  if(fs.existsSync("../../.././.jsipfs")) { 
+    fs.rmdirSync("../../.././.jsipfs", {recursive: true}); 
+    console.log(".jsipfs removed"); }
+  initializeBuildDirectory();
+  debugComponents();
+}
 
 async function generateUniqueFiles() {
-  console.log("_________________________________________________________________");
-  await initializeBuildDirectory();
-  await debugComponents();
-  await console.log(`Generating ${attributesCombinations.length} Unique Collectibles...`);
-  console.log("_________________________________________________________________");
+  await init();
+
+  const { generateImages } = require("./images.js");
   await generateImages();
+
   const { uploadGenerateAndUpload } = require("./upload.js");
-  await uploadGenerateAndUpload();
-  console.log(`End Program`);
+  const message = await uploadGenerateAndUpload(); 
+  console.log(message);
 }
 
 module.exports = { generateUniqueFiles };
