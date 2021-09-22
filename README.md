@@ -75,3 +75,11 @@ check your build folder for IPFS objects that hold your CID if you forget to not
 
 ![](https://github.com/ctnava/auto-art/blob/main/blob/ipfs.PNG)
 ![](https://github.com/ctnava/auto-art/blob/main/blob/sampleImages.PNG)
+
+# Misc
+remove your previous builds and wipe them off of your IPFS node with.
+```sh
+npm run reset
+```
+I have this repo in C:\Users\username\git\githubUsername\auto-art.
+Since the cleaning script is specifically coded to target the ".jsipfs" folder at the user's root, please edit "reset.js" accordingly
