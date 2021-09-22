@@ -4,8 +4,8 @@
   "description": "takes art components and automatically generates all possible combinations for upload to IPFS",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js",
-    "test": "node test.js"
+    "reset": "node reset.js",
+    "build": "node index.js"
   },
   "repository": {
     "type": "git",

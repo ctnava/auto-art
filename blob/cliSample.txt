@@ -1,0 +1,39 @@
+PS C:\Users\<THIS USER>\<PATH TO>\auto-art> npm run build
+
+> ez_nft@1.0.0 build C:\Users\<THIS USER>\<PATH TO>\auto-art
+> node index.js
+
+_________________________________________________________________
+
+Build Directories Initialized
+C:\Users\<THIS USER>\<PATH TO>\auto-art/build/6
+C:\Users\<THIS USER>\<PATH TO>\auto-art/build/6/metadata
+C:\Users\<THIS USER>\<PATH TO>\auto-art/build/6/images
+_________________________________________________________________
+
+Theoretical Collection Size: 648
+All Possible Attribute Combinations Generated
+All Possible Value Combinations Generated
+Generating 648 Unique Collectibles...
+_________________________________________________________________
+Generating Images... Please Wait
+Images Generated
+_________________________________________________________________
+Swarm listening on /ip4/XXX.0.0.XXX/tcp/PORT/p2p/<HASH>
+Swarm listening on /ip4/XXX.XXX.XXX.XXX/tcp/PORT/p2p/<HASH>
+Swarm listening on /ip4/127.0.0.1/tcp/PORT/p2p/<HASH>
+Swarm listening on /ip4/127.0.0.1/tcp/PORT/ws/p2p/<HASH>
+_________________________________________________________________
+Uploading Images... Please Wait
+Images Uploaded to <CID>/images
+_________________________________________________________________
+Assigning Rarity Scores... Please Wait
+Rarity Scores Assigned
+Generating Metadata... Please Wait
+Metadata Written to C:\Users\<THIS USER>\<PATH TO>\auto-art/build/6/metadata
+_________________________________________________________________
+Uploading Metadata... Please Wait
+Metadata Uploaded to <CID>/metadata
+_________________________________________________________________
+Upload Successful
+overwriting ./src/build.json

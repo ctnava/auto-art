@@ -87,6 +87,7 @@ const valuesInventory = generateValuesInventory();
 const valuesCombinations = loadCombinations(valuesInventory);
 
 function debugComponents() {
+  /*
   console.log("DEBUG: components.js\n\nSummary(Traits)\n\nRaw Directory:");
 	console.log(traitsDirectory);
   console.log("\nFolders:");
@@ -95,8 +96,8 @@ function debugComponents() {
   console.log("\nPaths:");
   console.log(traitPaths);
   console.log("\nNames:");
-  console.log(traits);
-  
+  console.log(traits);*/
+  /*
   console.log("\nSummary(Values): All Traits");
   traits.forEach(trait => {
     console.log("~~~~~~~~~~~~~~~");
@@ -121,15 +122,15 @@ function debugComponents() {
     console.log("~~~~~~~~~~~~~~~");
     console.log(`Trait: ${trait}\nTrait Index: ${tIndex(trait)}\nLast Value(${trait}): ${lastValue(trait)}`); 
     values(trait).forEach(value => { console.log(`    Value: ${value}\n    Value Index: ${vIndex(trait, value)}`); });
-  });
-  console.log("~~~~~~~~~~~~~~~");
+  }); */
+  //console.log("~~~~~~~~~~~~~~~");
   console.log(`\nTheoretical Collection Size: ${theoreticalCollectionSize}`);
-  console.log("\nPrinting Combinations");
-  console.log(attributesCombinations);
-  if(theoreticalCollectionSize === attributesCombinations.length) { console.log("SUCCESS: All Possible Attribute Combinations Generated"); }
+  //console.log("\nPrinting Combinations");
+  //console.log(attributesCombinations);
+  if(theoreticalCollectionSize === attributesCombinations.length) { console.log("All Possible Attribute Combinations Generated"); }
   else { console.log("ERROR: theoreticalCollectionSize != attributesCombinations.length"); }
-  console.log(valuesCombinations);
-  if(theoreticalCollectionSize === valuesCombinations.length) { console.log("SUCCESS: All Possible Value Combinations Generated"); }
+  //console.log(valuesCombinations);
+  if(theoreticalCollectionSize === valuesCombinations.length) { console.log("All Possible Value Combinations Generated"); }
   else { console.log("ERROR: theoreticalCollectionSize != attributesCombinations.length"); }
   console.log(`Generating ${attributesCombinations.length} Unique Collectibles...`);
   console.log("_________________________________________________________________");
